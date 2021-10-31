@@ -4,6 +4,7 @@
   },
   "dependencies": {
     "electron": "^15.3.0",
+    "electron-builder": "^22.13.1",
     "uuid": "^8.3.2"
   }
 }
