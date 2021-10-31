@@ -6,5 +6,3 @@ Simple Electronjs application to visit a specific link in the default browser, t
 3. Use `npm install` or `yarn` to install dependencies
 4. `npm start` to start the application, to start editing the links, there is a tray to open the editor, or quit the program
 
-# Building binaries
-To build binaries, follow [this guide](https://www.electron.build/cli), there is already `electron-builder` in `package.json`
