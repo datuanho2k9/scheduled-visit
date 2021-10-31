@@ -2,9 +2,21 @@
   "scripts": {
     "start": "electron ."
   },
+  "build": {
+    "appId": "com.datuanho2k9.scheduldedVist"
+  },
   "dependencies": {
-    "electron": "^15.3.0",
-    "electron-builder": "^22.13.1",
     "uuid": "^8.3.2"
-  }
+  },
+  "devDependencies": {
+    "electron": "^15.3.0",
+    "electron-builder": "^22.13.1"
+  },
+  "name": "schelduded-visting",
+  "author": {
+    "name": "Dat Tuan Ho",
+    "email": "datuanho2k9@gmail.com"
+  },
+  "description": "Auto visit link at specific time",
+  "version": "0.1.0"
 }
