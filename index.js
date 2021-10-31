@@ -53,9 +53,6 @@ function main() {
     }
 }
 // Make a timer with setInterval
-setInterval(() => {
-    main()
-}, 60000)
 
 // Create a system tray has an action to call newWin()
 function createTray() {
@@ -81,7 +78,12 @@ function createTray() {
 }
 
 app.whenReady().then(() => {
+    main()
     createTray()
+    setInterval(() => {
+        main()
+    }, 31000)
+
 })
 
 
