@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^15.3.0",
+    "uuid": "^8.3.2"
+  }
+}

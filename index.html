@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Assets/styles.css">
+</head>
+
+<body>
+    <table style="width:100%">
+        <thead>
+            <tr>
+                <th>
+                    Add/Remove
+                </th>
+                <th>
+                    Description
+                </th>
+                <th>
+                    Link
+                </th>
+                <th>
+                    Time
+                </th>
+            </tr>
+        </thead>
+        <tr>
+            <td>
+                <div style="margin: auto;" onclick="uploadData()">
+                    <img src="Assets/add.webp" height="50" />
+                </div>
+            </td>
+            <td>
+                <input type="text" placeholder="Description" id="desc">
+            </td>
+            <td>
+                <input type="text" placeholder="Link" id="link">
+            </td>
+            <td>
+                <input type="text" placeholder="Time" id="time">
+            </td>
+        </tr>
+        <tbody id="data">
+
+        </tbody>
+
+    </table>
+    <script src="./UI-Scripts/getData.js"></script>
+    <script src="./UI-Scripts/remove.js"></script>
+    <script src="./UI-Scripts/upload.js"></script>
+</body>
+
+</html>
