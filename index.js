@@ -90,7 +90,7 @@ app.whenReady().then(() => {
     createTray()
     setInterval(() => {
         main()
-    }, 31000)
+    }, 1000*60)
 
 })
 
