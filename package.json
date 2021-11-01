@@ -6,11 +6,11 @@
     "appId": "com.datuanho2k9.scheduldedVist"
   },
   "dependencies": {
+    "electron-packager": "^15.4.0",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "electron": "^15.3.0",
-    "electron-builder": "^22.13.1"
+    "electron": "^15.3.0"
   },
   "name": "scheduled-visiting",
   "author": {

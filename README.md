@@ -6,3 +6,5 @@ Simple Electronjs application to visit a specific link in the default browser, t
 3. Use `npm install` or `yarn` to install dependencies
 4. `npm start` to start the application. To start editing the links, there is a tray to open the editor, or quit the program
 
+# Building
+Refer to [Electron-Packager Documentation](https://github.com/electron/electron-packager) for the usage, already installed on this enviroment when used `npm i` or `yarn`
