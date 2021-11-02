@@ -6,16 +6,18 @@ const path = require('path')
 const dataPath = path.join(__dirname, 'data.json')
 let openedWin = false;
 let tray;
-console.log(dataPath)
+
 function newWin() {
     openedWin = true;
+    // Create new browser windows with with 800, height 6000, nodeintergration and contextisolation is true, with icon is path.join(__dirname, 'Assets', 'tray.png')
     const win = new BrowserWindow({
         width: 800,
         height: 600,
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,
-        }
+        },
+        icon: path.join(__dirname, 'Assets', 'tray.png')
     })
     win.loadFile('index.html')
     ipcMain.on('newData', (event, arg) => {
@@ -68,7 +70,7 @@ function createTray() {
     tray = new Tray(trayIcon)
     const contextMenu = Menu.buildFromTemplate([
         {
-            label: 'Open',
+            label: 'Open editor',
             click: () => {
                 if (openedWin == false) {
                     newWin()
