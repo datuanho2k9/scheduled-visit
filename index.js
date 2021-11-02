@@ -5,6 +5,7 @@ const path = require('path')
 
 const dataPath = path.join(__dirname, 'data.json')
 let openedWin = false;
+let tray;
 console.log(dataPath)
 function newWin() {
     openedWin = true;
@@ -64,7 +65,7 @@ function main() {
 // Create a system tray has an action to call newWin()
 function createTray() {
     const trayIcon = path.join(__dirname, 'Assets', 'tray.png')
-    const tray = new Tray(trayIcon)
+    tray = new Tray(trayIcon)
     const contextMenu = Menu.buildFromTemplate([
         {
             label: 'Open',
@@ -83,6 +84,7 @@ function createTray() {
     ])
     tray.setToolTip('Project')
     tray.setContextMenu(contextMenu)
+
 }
 
 app.whenReady().then(() => {
@@ -90,7 +92,7 @@ app.whenReady().then(() => {
     createTray()
     setInterval(() => {
         main()
-    }, 1000*60)
+    }, 1000 * 60)
 
 })
 
